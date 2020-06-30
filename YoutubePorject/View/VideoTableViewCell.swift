@@ -47,6 +47,15 @@ class VideoTableViewCell: UITableViewCell {
             return
         }
         
+        
+        if let cashData = CashManager.getVideoCache(url: self.video!.thumbnail){
+
+            self.thumbnailImageview.image = UIImage(data: cashData)
+
+            return
+        }
+        
+        
         let http = URL(string: self.video!.thumbnail)!
         var comps = URLComponents(url: http, resolvingAgainstBaseURL: false)!
         comps.scheme = "http"
@@ -60,12 +69,7 @@ class VideoTableViewCell: UITableViewCell {
             
             if error == nil && data != nil {
                 
-                // Check that the downloaded url matches the video thumbnail url that this cell is currently set to display
-                if url.absoluteString != self.video?.thumbnail {
-                    
-                    // Video cell has been recycled for another video and no longer matches the thumbnail that was downloaded
-                    return
-                }
+                CashManager.setVideoCache(url: url.absoluteString, data: data)
                 
                 // Create the image object
                 let image = UIImage(data: data!)

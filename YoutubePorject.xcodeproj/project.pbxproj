@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		875A063F24AA61F30077157A /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875A063E24AA61F30077157A /* VideoTableViewCell.swift */; };
+		875A064124AB67EE0077157A /* CashManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875A064024AB67EE0077157A /* CashManager.swift */; };
 		87E9AC7324A914DF001E49C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E9AC7224A914DF001E49C2 /* AppDelegate.swift */; };
 		87E9AC7824A914DF001E49C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87E9AC7624A914DF001E49C2 /* Main.storyboard */; };
 		87E9AC7A24A914E1001E49C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87E9AC7924A914E1001E49C2 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		875A063E24AA61F30077157A /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
+		875A064024AB67EE0077157A /* CashManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashManager.swift; sourceTree = "<group>"; };
 		87E9AC6F24A914DF001E49C2 /* YoutubePorject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoutubePorject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87E9AC7224A914DF001E49C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87E9AC7724A914DF001E49C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				87E9AC8424A914F6001E49C2 /* Constants.swift */,
+				875A064024AB67EE0077157A /* CashManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				87E9AC7324A914DF001E49C2 /* AppDelegate.swift in Sources */,
 				87E9AC8D24A95210001E49C2 /* VideoTableViewController.swift in Sources */,
 				87E9AC8B24A929F8001E49C2 /* Response.swift in Sources */,
+				875A064124AB67EE0077157A /* CashManager.swift in Sources */,
 				87E9AC8524A914F6001E49C2 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
