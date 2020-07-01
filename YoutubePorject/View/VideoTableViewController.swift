@@ -24,6 +24,18 @@ class VideoTableViewController: UITableViewController, ModelDelegate {
         tableView.reloadData()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard tableView.indexPathForSelectedRow!.row != nil else {
+            return
+        }
+        
+        let selectVideo = videos[tableView.indexPathForSelectedRow!.row]
+        
+        let detailVc = segue.destination as! DetailViewController
+        
+        detailVc.video = selectVideo
+    }
+    
     // MARK: - Table view data source
     
     override func numberOfSections(in tableView: UITableView) -> Int {

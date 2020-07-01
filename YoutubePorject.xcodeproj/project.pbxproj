@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8750B20C24AD11F100656FBF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8750B20B24AD11F100656FBF /* DetailViewController.swift */; };
+		8750B20F24AD1A4000656FBF /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8750B20E24AD1A4000656FBF /* WebKit.framework */; };
 		875A063F24AA61F30077157A /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875A063E24AA61F30077157A /* VideoTableViewCell.swift */; };
 		875A064124AB67EE0077157A /* CashManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875A064024AB67EE0077157A /* CashManager.swift */; };
 		87E9AC7324A914DF001E49C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E9AC7224A914DF001E49C2 /* AppDelegate.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8750B20B24AD11F100656FBF /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		8750B20E24AD1A4000656FBF /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		875A063E24AA61F30077157A /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
 		875A064024AB67EE0077157A /* CashManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashManager.swift; sourceTree = "<group>"; };
 		87E9AC6F24A914DF001E49C2 /* YoutubePorject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoutubePorject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,12 +45,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8750B20F24AD1A4000656FBF /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8750B20D24AD1A4000656FBF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8750B20E24AD1A4000656FBF /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		875A063924AA5ACA0077157A /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +93,7 @@
 			children = (
 				87E9AC8C24A95210001E49C2 /* VideoTableViewController.swift */,
 				875A063E24AA61F30077157A /* VideoTableViewCell.swift */,
+				8750B20B24AD11F100656FBF /* DetailViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -89,6 +103,7 @@
 			children = (
 				87E9AC7124A914DF001E49C2 /* YoutubePorject */,
 				87E9AC7024A914DF001E49C2 /* Products */,
+				8750B20D24AD1A4000656FBF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -185,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8750B20C24AD11F100656FBF /* DetailViewController.swift in Sources */,
 				87E9AC8924A91912001E49C2 /* Model.swift in Sources */,
 				87E9AC8724A91828001E49C2 /* Video.swift in Sources */,
 				875A063F24AA61F30077157A /* VideoTableViewCell.swift in Sources */,
